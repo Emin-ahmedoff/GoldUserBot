@@ -5,7 +5,7 @@
 
 <div align="center">
   <img src="https://i.imgyukle.com/2020/05/29/yBpJsP.jpg" width="200" height="200">
-  <h1>Asena UserBot</h1>
+  <h1>Gold UserBot</h1>
 </div>
 <p align="center">
     Asena UserBot, Telegram kullanmanızı kolaylaştıran bir bottur. Tamamen açık kaynaklı ve ücretsizdir.
@@ -31,7 +31,7 @@
 ### Basit Yöntem
 Eğer botu kurma hakkında fikriniz yoksa burayı okuyunuz: [Kurulum Rehberi](https://github.com/Quiec/AsenaUserBot/wiki/Kurulum/)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Emin-ahmedoff/AsenaUserBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Emin-ahmedoff/GoldUserBot)
 ### Zor Yöntem
 ```python
 git clone https://github.com/Quiec/AsenaUserBot.git
