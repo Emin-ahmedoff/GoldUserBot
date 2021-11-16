@@ -120,11 +120,11 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # AsenaPY
-            Asenapy = re.search('\"\"\"ASENAPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Asenapy == None:
-                Asenapy = Asenapy.group(0)
-                for Satir in Asenapy.splitlines():
+            # GoldPY
+            Goldpy = re.search('\"\"\"GOLDPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Goldpy == None:
+                Goldpy = Goldpy.group(0)
+                for Satir in Goldpy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -146,7 +146,7 @@ try:
     bot.start()
     idim = bot.get_me().id
     asenabl = requests.get('https://gitlab.com/Quiec/asen/-/raw/master/asen.json').json()
-    if idim in asenabl:
+    if idim in goldbl:
         bot.disconnect()
 
     # ChromeDriver'ı Ayarlayalım #
@@ -238,7 +238,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz çalışıyor! Herhangi bir sohbete .alive yazarak Test edin."
           " Yardıma ihtiyacınız varsa, Destek grubumuza gelin t.me/AsenaSupport")
-LOGS.info(f"Bot sürümünüz: Asena {ASENA_VERSION}")
+LOGS.info(f"Bot sürümünüz: Asena {GOLD_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
