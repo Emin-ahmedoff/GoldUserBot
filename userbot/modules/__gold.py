@@ -21,7 +21,7 @@ LANG = get_value("__gold")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.asena(?: |$)(.*)")
+@register(outgoing=True, pattern="^.gold(?: |$)(.*)")
 async def asena(event):
     """ .gold komutu için """
     args = event.pattern_match.group(1).lower()
