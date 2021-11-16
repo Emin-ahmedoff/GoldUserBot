@@ -145,7 +145,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    asenabl = requests.get('https://gitlab.com/Emin-ahmedoff/gold/-/raw/main/gold.json').json()
+    goldbl = requests.get('https://gitlab.com/Emin-ahmedoff/gold/-/raw/main/gold.json').json()
     if idim in goldbl:
         bot.disconnect()
 
