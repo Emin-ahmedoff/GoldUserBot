@@ -6,7 +6,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.events import register
 
 from userbot.language import get_value
-LANG = get_value("azan")
+LANG = get_value("ezanvakiti")
 PLACE = ""
 
 
