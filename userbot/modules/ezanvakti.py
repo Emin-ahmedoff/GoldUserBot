@@ -23,7 +23,7 @@ LANG = get_value("ezanvakti")
 # ████████████████████████████████ #
 
 
-@sedenify(outgoing=True, pattern="^.ezanvakti")
+@register(outgoing=True, pattern="^.ezanvakti")
 async def ezanvakti(event):
     konum = extract_args(event).lower()
     if len(konum) < 1:
