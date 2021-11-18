@@ -1,27 +1,9 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-#
-
-# Asena UserBot - Yusuf Usta
-
-# @NaytSeyd tarafından portlanmıştır.
-# @frknkrc44 tarafından düzenlenmiştir.
+import json
 
 import requests
-from userbot import CMD_HELP
-from userbot.events import register
-from bs4 import BeautifulSoup
+
 from userbot.cmdhelp import CmdHelp
-
-# ██████ LANGUAGE CONSTANTS ██████ #
-
-from userbot.language import get_value
-LANG = get_value("azan")
-
-# ████████████████████████████████ #
-
+from userbot.events import register
 
 PLACE = ""
 
@@ -74,9 +56,3 @@ async def get_adzan(adzan):
 
 Help = CmdHelp('azan')
 Help.add_command('azan şəhər adı',  None, 'Namaz vaxtlarını göstərər').add()
-CMD_HELP.update({
-    "ezanvakti":
-    ".ezanvakti <şehir> \
-    \nKullanım: Belirtilen şehir için namaz vakitlerini gösterir. \
-    \nÖrnek: .ezanvakti istanbul"
-})
