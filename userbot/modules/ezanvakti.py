@@ -35,7 +35,7 @@ async def ezanvakti(event):
         await event.edit(LANG['NEED_CITY'])
         return
 
-    url = f'https://www.mynet.com/{konum}/namaz-vakitleri'
+    url = f'https://metbuat.az/{konum}namaz'
     if not ilce == None:
         url += '/' + ilce.strip()
 
